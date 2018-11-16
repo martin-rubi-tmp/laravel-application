@@ -25,4 +25,4 @@ composer install
 php artisan serve
 ```
 
-and open the browser on http://127.0.0.1:8000/
+and open the browser on http://127.0.0.1:8000/users

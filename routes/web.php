@@ -20,4 +20,4 @@ if( ! RedBeanCollection::is_connected() ) {
 
 
 Route::get('/users', 'Users\ListUsersAction');
-Route::post('/users', 'Users\CreateUserAction');
+Route::post('/users/create', 'Users\CreateUserAction');
