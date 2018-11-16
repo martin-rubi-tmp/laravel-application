@@ -1,12 +1,5 @@
 <?php
 
-/// Initialize endpoints
-use Youbim\Collections\RedBeanCollection;
-if( ! RedBeanCollection::is_connected() ) {
-    $mysql = config('database.mysql');
-    RedBeanCollection::setup_connection( $mysql['connect'], $mysql['user'], $mysql['password'] );
-}
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +11,9 @@ if( ! RedBeanCollection::is_connected() ) {
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/users', 'Users\ListUsersAction');
 Route::post('/users/create', 'Users\CreateUserAction');

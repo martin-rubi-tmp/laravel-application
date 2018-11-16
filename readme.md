@@ -1,4 +1,4 @@
-# Slim integration with endpoints
+# Laravel integration with endpoints
 
 An example of an integration of youbim-technical-test endpoints with a Laravel application.
 
